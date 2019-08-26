@@ -6,7 +6,6 @@ function patch(diffLocation,fileName){
             if(err){
                 console.log(err.message);
             }
-            
         });
     }
 

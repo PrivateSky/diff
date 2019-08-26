@@ -41,7 +41,10 @@ let obj3 = {
     arr:[1,2,3,4,5,6,7,'b','c']
 };
 let diff = [3,['d',{propFs:"LLT"}],5,['d',{propstar:"HM"}],7,[['m','a','b'],['d','c']]];
-console.log(JSON.stringify(diff));
+let diff2 = '[3,["d",{"propFs":"LLT"}],5,["d",{"propstar":"HM"}],7,[["m","a","b"],["d","c"]]]';
+// console.log(obj3);
+// console.log(JSON.stringify(diff));
+console.log(JSON.parse(diff2)[1][1]);
 fs.writeFile('a.txt',JSON.stringify(diff),(err)=>{
     if(err){
         throw err;
