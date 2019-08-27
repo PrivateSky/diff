@@ -45,6 +45,7 @@ let obj3 = {
     },
     arr:[1,2,3,4,5,6,7,'b','c']
 };
+
 let diff2 = '[3,["d",{"propFs":"LLT"}],5,[["d",{"propstar":"HM"}],["m",2,"string 103","string 101"]],7,[["m",8,"a","b"],["d","c"]]]';
 // console.log(obj3);
 // console.log(JSON.stringify(diff));

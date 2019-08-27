@@ -1,0 +1,22 @@
+ana are mere
+
+ana are pere verzi si mere
+
++8pere verzi si
+['+',8,"pere verzi si"]
+
+ana are mere
+ana are pere
+
+[8,1,"p"]
+
+ana are mere, pere
+ana are pere, mere
+
+-8,1;+8,",";-14,1;+14,"m"
+[8,1,"p",14,1,"m"]
+
+ana are mere si pere
+ana are pere
+
+['-',8,8]
