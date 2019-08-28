@@ -1,1 +1,0 @@
-{"propNum":100,"propStr":"string 100","propArr":[1,"100"],"propObj":{"propNum":101,"propStr":"string 101","redundantPropStr":"string 101","propArr":[1,"100",{"propNum":102,"propStr":"string 122","popstar":"HM"}]},"minobj":{"uno":2,"duo":3},"arr":[1,2,3,4,5,6,7,"b","c"]}
