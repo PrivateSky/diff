@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42ad160a-b6a3-4f77-843f-8b207c47af0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Patcher.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Patch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/a.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/b.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Operations.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Operations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Patcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Patcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/testPatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testPatch.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Patcher.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+            <state relative-caret-position="255">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -32,26 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Operations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/a.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" selection-start-column="26" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/b.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" selection-start-column="22" selection-end-column="22" />
+            <state relative-caret-position="238">
+              <caret line="14" column="76" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -68,8 +49,62 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/testPatch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="40" column="59" lean-forward="true" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
+            <state relative-caret-position="442">
+              <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/a.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="42" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/b.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="64" lean-forward="true" selection-start-column="64" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/b1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="63" lean-forward="true" selection-start-column="63" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/a.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/b.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="63" lean-forward="true" selection-start-column="63" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -94,18 +129,21 @@
         <option value="$PROJECT_DIR$/a2.txt" />
         <option value="$PROJECT_DIR$/b2.txt" />
         <option value="$PROJECT_DIR$/Patch.js" />
-        <option value="$PROJECT_DIR$/lib/b.txt" />
-        <option value="$PROJECT_DIR$/lib/Operations.js" />
-        <option value="$PROJECT_DIR$/lib/a.txt" />
         <option value="$PROJECT_DIR$/lib/Patch.js" />
+        <option value="$PROJECT_DIR$/tests/b1.txt" />
+        <option value="$PROJECT_DIR$/tests/test.js" />
+        <option value="$PROJECT_DIR$/lib/b.txt" />
+        <option value="$PROJECT_DIR$/lib/a.txt" />
+        <option value="$PROJECT_DIR$/lib/Operations.js" />
+        <option value="$PROJECT_DIR$/lib/Patcher.js" />
         <option value="$PROJECT_DIR$/tests/testPatch.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="709" />
-    <option name="y" value="50" />
-    <option name="width" value="974" />
+    <option name="x" value="2554" />
+    <option name="y" value="55" />
+    <option name="width" value="1140" />
     <option name="height" value="1167" />
   </component>
   <component name="ProjectView">
@@ -113,6 +151,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,7 +178,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,10 +215,14 @@
     <configuration name="testPatch.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="testPatch.js" working-dir="$PROJECT_DIR$/tests">
       <method v="2" />
     </configuration>
+    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/tests">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.testPatch.js" />
         <item itemvalue="Node.js.Patcher.js" />
+        <item itemvalue="Node.js.test.js" />
         <item itemvalue="Node.js.Patch.js" />
       </list>
     </recent_temporary>
@@ -197,18 +239,19 @@
       <updated>1566893161799</updated>
       <workItem from="1566893164180" duration="5881000" />
       <workItem from="1566982400434" duration="15894000" />
-      <workItem from="1567068755274" duration="4757000" />
+      <workItem from="1567068755274" duration="4871000" />
+      <workItem from="1567154923548" duration="4863000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26532000" />
+    <option name="totallyTimeSpent" value="31509000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16174921" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -245,6 +288,20 @@
     <entry file="file://$PROJECT_DIR$/bundles/pskruntime.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/a.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/b.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="63" lean-forward="true" selection-start-column="63" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/som.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -252,48 +309,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/a.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/b.txt">
+    <entry file="file://$PROJECT_DIR$/tests/b1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/a.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
+          <caret column="63" lean-forward="true" selection-start-column="63" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/b.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
+          <caret column="64" lean-forward="true" selection-start-column="64" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Patcher.js">
+    <entry file="file://$PROJECT_DIR$/lib/a.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+        <state>
+          <caret column="42" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Operations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+        <state relative-caret-position="238">
+          <caret line="14" column="76" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Patcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/testPatch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="40" column="59" lean-forward="true" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
+        <state relative-caret-position="442">
+          <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
         </state>
       </provider>
     </entry>

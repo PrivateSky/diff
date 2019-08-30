@@ -5,9 +5,9 @@ const Patcher = require("../lib/Patcher");
 const fs = require('fs');
 const assert = require('double-check').assert;
 
-let textEx = ['ana are mere','ana are mere, pere','ana are mere si pere'];
-let diffs = ['["+",8,"pere verzi si "]','[8,1,"p",14,1,"m"]','["-",8,8]'];
-let patched = ['ana are pere verzi si mere','ana are pere, mere','ana are pere'];
+let textEx = ['ana are mere','ana are mere, pere','ana are mere si pere','{pop:3}'];
+let diffs = [['+',8,'pere verzi si '],[8,1,'p',14,1,'m'],['-',8,8],[5,1,4,'+',6,',ob:"salut"','+',17,',valsViniez:{arr:[1,2,3]}']];
+let patched = ['ana are pere verzi si mere','ana are pere, mere','ana are pere','{pop:4,ob:"salut",valsViniez:{arr:[1,2,3]}}'];
 assert.begin("testPath", () => {
     console.log("Cleabnup")
 }, 3000);
@@ -17,33 +17,14 @@ assert.callback("testPath",(callback)=>{
         if(index>=length){
             return callback(undefined);
         }
-        fs.writeFile('a.txt',textEx[index],(err)=>{
+        new Patcher().applyPatch(JSON.stringify(diffs[index]),textEx[index],(err,data)=>{
             if(err){
                 return callback(err);
             }
-            fs.writeFile('b.txt',diffs[index],(err)=>{
-                if(err){
-                    return callback(err);
-                }
-                new Patcher().callPatcher('b.txt','a.txt',(err,data)=>{
-                    if(err){
-                        return callback(err);
-                    }
-                    assert.true(data === patched[index]);
-                    fs.unlink('a.txt',(err)=>{
-                        if(err){
-                            return callback(err);
-                        }
-                        fs.unlink('b.txt',(err)=>{
-                            if(err){
-                                return callback(err);
-                            }
-                            smallRecursion(index+1,length);
-                        });
-                    });
-                });
-            });
+            assert.true(data === patched[index]);
+            console.log(data);
+            smallRecursion(index+1,length);
         });
     }
-    smallRecursion(0,3);
+    smallRecursion(0,4);
 },3000);
