@@ -4,7 +4,8 @@
     <list default="true" id="42ad160a-b6a3-4f77-843f-8b207c47af0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Diff.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Diff.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Patcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Patcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testPatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testPatch.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Operations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="76" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
+            <state relative-caret-position="68">
+              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -47,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/testPatch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+            <state relative-caret-position="136">
+              <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -56,8 +57,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/Diff.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+            <state relative-caret-position="529">
+              <caret line="119" column="25" lean-forward="true" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/testDiff.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -74,8 +84,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="69" />
+            <state relative-caret-position="136">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="19" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,21 +115,22 @@
         <option value="$PROJECT_DIR$/Patch.js" />
         <option value="$PROJECT_DIR$/lib/Patch.js" />
         <option value="$PROJECT_DIR$/tests/b1.txt" />
-        <option value="$PROJECT_DIR$/tests/test.js" />
         <option value="$PROJECT_DIR$/lib/b.txt" />
         <option value="$PROJECT_DIR$/lib/a.txt" />
         <option value="$PROJECT_DIR$/lib/Operations.js" />
-        <option value="$PROJECT_DIR$/tests/testPatch.js" />
         <option value="$PROJECT_DIR$/lib/Patcher.js" />
         <option value="$PROJECT_DIR$/lib/MyersDiff.js" />
         <option value="$PROJECT_DIR$/lib/SesDiff.js" />
+        <option value="$PROJECT_DIR$/tests/test.js" />
+        <option value="$PROJECT_DIR$/tests/testPatch.js" />
         <option value="$PROJECT_DIR$/lib/Diff.js" />
+        <option value="$PROJECT_DIR$/tests/testDiff.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="440" />
-    <option name="y" value="-8" />
+    <option name="x" value="452" />
+    <option name="y" value="62" />
     <option name="width" value="1140" />
     <option name="height" value="1167" />
   </component>
@@ -179,14 +193,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.Diff.js">
+  <component name="RunManager" selected="Node.js.testDiff.js">
     <configuration name="Diff.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Diff.js" working-dir="$PROJECT_DIR$/lib">
       <method v="2" />
     </configuration>
-    <configuration name="Patch.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Patch.js" working-dir="$PROJECT_DIR$">
+    <configuration name="Patcher.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/Patcher.js" working-dir="$PROJECT_DIR$/lib">
       <method v="2" />
     </configuration>
-    <configuration name="Patcher.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/Patcher.js" working-dir="$PROJECT_DIR$/lib">
+    <configuration name="testDiff.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="testDiff.js" working-dir="$PROJECT_DIR$/tests">
       <method v="2" />
     </configuration>
     <configuration name="testPatch.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="testPatch.js" working-dir="$PROJECT_DIR$/tests">
@@ -197,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.testDiff.js" />
         <item itemvalue="Node.js.Diff.js" />
+        <item itemvalue="Node.js.test.js" />
         <item itemvalue="Node.js.testPatch.js" />
         <item itemvalue="Node.js.Patcher.js" />
-        <item itemvalue="Node.js.test.js" />
-        <item itemvalue="Node.js.Patch.js" />
       </list>
     </recent_temporary>
   </component>
@@ -220,12 +234,13 @@
       <workItem from="1567068755274" duration="4871000" />
       <workItem from="1567154923548" duration="10779000" />
       <workItem from="1567498824911" duration="4441000" />
-      <workItem from="1567586640195" duration="6726000" />
+      <workItem from="1567586640195" duration="6887000" />
+      <workItem from="1567671431376" duration="18737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48592000" />
+    <option name="totallyTimeSpent" value="67490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -236,7 +251,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32981783" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33652925" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33269414" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39980826" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -273,31 +288,10 @@
     <entry file="file://$PROJECT_DIR$/tests/b1.txt" />
     <entry file="file://$PROJECT_DIR$/lib/b.txt" />
     <entry file="file://$PROJECT_DIR$/lib/a.txt" />
-    <entry file="file://$PROJECT_DIR$/lib/Operations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="76" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/som.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/testPatch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -308,6 +302,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/report.20190905.161831.5812.0.001.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Operations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/Patcher.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -315,10 +329,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/testPatch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/testDiff.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/Diff.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+        <state relative-caret-position="529">
+          <caret line="119" column="25" lean-forward="true" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
         </state>
       </provider>
     </entry>
