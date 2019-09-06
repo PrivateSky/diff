@@ -20,7 +20,7 @@ assert.callback("testDiff",(callback)=>{
         }
         new Diff().createDiff(textEx[index],patched[index],(err,data)=>{
             console.log(JSON.stringify(data));
-            new Patcher().applyPatch(JSON.stringify(data),textEx[index],(err,patchedData)=>{
+            new Patcher().applyPatch(data,textEx[index],(err,patchedData)=>{
                 if(err){
                     return callback(err);
                 }
@@ -30,5 +30,5 @@ assert.callback("testDiff",(callback)=>{
             });
         });
     }
-    smallRecursion(0,3);
+    smallRecursion(0,1);
 },3000);
