@@ -32,18 +32,26 @@ obj2.propObj.propArr.push(70);
 
 //console.log(JSON.stringify(obj1),JSON.stringify(obj2));
 
-//console.log(JSON.stringify(obj1),JSON.stringify(obj1).length);
-//console.log(JSON.stringify(obj2),JSON.stringify(obj2).length);
+// console.log(JSON.stringify(obj1),JSON.stringify(obj1).length);
+// console.log(JSON.stringify(obj2),JSON.stringify(obj2).length);
+let a = JSON.stringify(obj1);
+let b = JSON.stringify(obj2);
+console.log(a);
+console.log(b);
 // let a = '{"redundantPropStr":"string 101","propArr":[1,"100",{"propNum":102,"propStr":"string 103"}]}';
 // let b = '{"propArr":[1,"100",{"propNum":102,"propStr":"24"},70],"newProp":1007},"newNum":1001,"newProp":1002}';
-let a = '{"redundantPropStr":"string 101"}';
-let b = '{"propArr":[1,"100"]}';
+// let a = '{"redundantPropStr":"string 101"}';
+// let b = '{"propArr":[1,"100"]}';
 // let a = 'ana are pere verzi si mere';
 // let b = 'ana are mere';
+
 new Diff().createDiff(b,a,(err,data)=>{
     console.log(data);
    new Patcher().applyPatch(data,b,(err,dataF)=>{
        //console.log(JSON.stringify(obj2));
        console.log(dataF);
+       if(dataF === a){
+           console.log('Y');
+       }
    });
 });
