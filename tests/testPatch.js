@@ -16,7 +16,7 @@ assert.begin("testPatch",()=>{
 assert.callback("testPatch",(callback)=>{
     function testAllPatches(){
         for(let index = 0; index < textEx.length; index++){
-            let patchedData = new Patcher().applyPatch(diffs[index],textEx[index]);
+            let patchedData = Patcher().applyPatch(diffs[index],textEx[index]);
             assert.true(patchedData === patched[index]);
         }
         return callback(undefined);
