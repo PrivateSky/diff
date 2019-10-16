@@ -33,10 +33,14 @@ let patched = ['ana are pere verzi si mere','ana are pere, mere','ana are pere',
 // console.log(diff);
 // console.log(Patcher().applyPatch(diff,textEx[0]));
 
-let diff = RsyncDiff('c.txt',3,"ana are pere, mere");
+let diff = RsyncDiff('c.txt',3,jsonBigExM);
 diff.runRsync((arr)=>{
     for(let i = 0 ; i < arr.length; i+=3){
         console.log(arr[i],arr[i+1],arr[i+2]);
     }
-    console.log(Patcher().applyPatch(arr,"ana are mere, pere"));
+    console.log(Patcher().applyPatch(arr,jsonBigEx));
+    if(Patcher().applyPatch(arr,jsonBigEx) === jsonBigExM){
+        console.log('Yuppy');
+    }
+    //console.log(Patcher().applyPatch(arr,jsonBigEx));
 });
