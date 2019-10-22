@@ -19,25 +19,15 @@ assert.begin("testDiff",()=>{
 assert.callback("testDiff",(callback)=>{
     function testAllDiffs(){
         for(let index = 0; index < textEx.length; index++){
-            //let diff = Diff().createDiff(textEx[index],patched[index]);
-            //let patchedData = Patcher().applyPatch(diff,textEx[index]);
-            let diff = RDiff().runRsync(textEx[index],5,patched[index]);
-            let patchedData = Patcher().applyPatch(diff,textEx[index]);
-            //console.log(patchedData);
-            assert.true(patchedData === patched[index]);
+            for(let index2 = 1; index2 < textEx[index].length - 1; index2++) {
+                let diff = RDiff().runRsync(textEx[index], index2, patched[index]);
+                let patchedData = Patcher().applyPatch(diff, textEx[index]);
+                // console.log(diff);
+                // console.log(patchedData);
+                assert.true(patchedData === patched[index]);
+            }
         }
         return callback(undefined);
     }
     testAllDiffs();
 },3000);
-
-// let ja = "Don't cry over, smile";
-// let jb = "Don't cry because it's over, smile because it happened";
-// let rsync = new RsyncDiff();
-//
-// //let diff = rsync.runRsync('ana are mere',8,'ana are pere verzi si mere');
-// let diff = rsync.runRsync(textEx[6],5,patched[6]);
-// console.log(diff);
-// let out = Patcher().applyPatch(diff,textEx[6]);
-// console.log(out);
-// console.log(out === patched[6]);
