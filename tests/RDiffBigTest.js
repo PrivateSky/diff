@@ -25,7 +25,7 @@ assert.callback("testDiff",(callback)=>{
         let firstString ='';
         let secondString ='';
         let picks = ['anba','babafa','faf','fafafa','1baca1','vcacabga','{{FAfafa{}{{}','dfafa1124','Fafar11{PVAFafa{LAf}','rrorao','afafq12eqwdesabgf','2qewdeas'];
-        for(let i = 0 ; i < 10010; i++) {
+        for(let i = 0 ; i < 256010; i++) {
             let position = Math.floor(Math.random() * picks.length);
             firstString += picks[position];
             position = Math.floor(Math.random()*picks.length);
@@ -33,7 +33,7 @@ assert.callback("testDiff",(callback)=>{
         }
         console.log('done');
         console.time('diff');
-        let diff = RDiff().runRsync(firstString,128,secondString);
+        let diff = RDiff().runRsync(firstString,512,secondString);
         console.timeEnd('diff');
         let patchedData = Patcher().applyPatch(diff,firstString);
         console.log(patchedData === secondString);
