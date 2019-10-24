@@ -22,7 +22,7 @@ assert.callback("testDiff",(callback)=>{
             for(let index2 = 1; index2 < textEx[index].length - 1; index2++) {
                 let diff = RDiff().runRsync(textEx[index], index2, patched[index]);
                 let patchedData = Patcher().applyPatch(diff, textEx[index]);
-                // console.log(diff);
+                console.log(diff);
                 // console.log(patchedData);
                 assert.true(patchedData === patched[index]);
             }
