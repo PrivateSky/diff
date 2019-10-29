@@ -26,17 +26,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.Adler.js">
+  <component name="RunManager" selected="Node.js.testChecksums.js">
     <configuration name="Adler.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Adler.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="RabinKarp.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="RabinKarp.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="testChecksums.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="testChecksums.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.Adler.js" />
+        <item itemvalue="Node.js.testChecksums.js" />
         <item itemvalue="Node.js.RabinKarp.js" />
+        <item itemvalue="Node.js.Adler.js" />
       </list>
     </recent_temporary>
   </component>
@@ -51,6 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572258295651</updated>
       <workItem from="1572258298160" duration="6491000" />
+      <workItem from="1572351345157" duration="7836000" />
     </task>
     <servers />
   </component>

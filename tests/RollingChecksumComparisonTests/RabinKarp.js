@@ -35,7 +35,7 @@ function RabinKarp(){
         let numberOfCollisions = 0;
         let numberOfSuccess = 0;
         let index;
-        for(let i=0;i<blocks.length;i++){
+        for(let i=0;i<1;i++){
             let easyDigest = computeCheckSum(blocks[i]);
             blockSize = blocks[i].length;
             let window = computeCheckSum(second.slice(0,blockSize));
@@ -80,5 +80,9 @@ function RabinKarp(){
     }
 }
 
-let a = new RabinKarp();
-console.log(a.execute('ana are mere', 5, 'ana are mult mere'));
+module.exports = ()=>{
+    return new RabinKarp();
+}
+
+// let a = new RabinKarp();
+// console.log(a.execute('ana are mere', 3, 'ana are mult mere'));

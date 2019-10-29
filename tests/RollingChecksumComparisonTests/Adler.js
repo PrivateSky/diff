@@ -18,24 +18,26 @@ function Adler(){
     function compare(blocks,byteArr,blockSize){
         let numberOfCollisions = 0;
         let numberOfSuccess = 0;
-        for(let i=0;i<blocks.length;i++){
+        for(let i=0;i<1;i++){
             let easyDigest = adler32.sum(blocks[i]);
             let hardDigest = hardCheckSum(blocks[i]);
             blockSize = blocks[i].length;
+            //console.log(easyDigest);
             let window = adler32.sum(byteArr.slice(0,blockSize));
             for(let j=blockSize;j<byteArr.length;j++){
+                //console.log('A',window);
                 if(window == easyDigest){
-                    console.log(i,j);
-                    let hD = hardCheckSum(byteArr.slice(i-blockSize,i));
+                    let hD = hardCheckSum(byteArr.slice(j-blockSize,j));
                     if(hardDigest == hD){
                         numberOfSuccess++;
-                        window = adler32.sum(byteArr.slice(i,i+blockSize));
+                        window = adler32.sum(byteArr.slice(j,j+blockSize));
+                        j = j + blockSize - 1;
                     }else{
                         numberOfCollisions++;
-                        window = adler32.sum(byteArr[i],window);
+                        window = adler32.roll(window,blockSize,byteArr[j-blockSize],byteArr[j]);
                     }
                 }else{
-                    window = adler32.sum(byteArr[i],window);
+                    window = adler32.roll(window,blockSize,byteArr[j-blockSize],byteArr[j]);
                 }
             }
         }
@@ -51,5 +53,9 @@ function Adler(){
     }
 }
 
-let a = new Adler();
-console.log(a.execute('ana are mere', 3, 'ana are mult mere'));
+module.exports = ()=>{
+    return new Adler();
+};
+
+// let a = new Adler();
+// console.log(a.execute('ana are mere', 3, 'ana are mult mere'));
