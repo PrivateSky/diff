@@ -35,7 +35,7 @@ function compareRHModules(){
     // console.log(rkComparator.execute(firstString,256,secondString));
     // console.timeEnd('RK');
     console.time('Adler');
-    console.log(adComparator.execute(firstString,4,secondString));
+    console.log(adComparator.execute(firstString,128,secondString));
     console.timeEnd('Adler');
 }
 
