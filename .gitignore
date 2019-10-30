@@ -1,0 +1,8 @@
+.idea/
+tests/nm2.txt
+tests/nm4.txt
+a.txt
+tests/RollingChecksumComparisonTests/node_modules/
+tests/RollingChecksumComparisonTests/.idea/
+tests/RollingChecksumComparisonTests/nm2.txt
+tests/RollingChecksumComparisonTests/nm4.txt
